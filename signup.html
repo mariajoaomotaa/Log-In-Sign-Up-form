@@ -6,6 +6,7 @@
         <meta name="author" content="Maria João Mota">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <script defer src="index.js"></script>
     </head>
     <body>
         <img src="WholeWorld.1.png">
@@ -16,7 +17,7 @@
                 <a href="login.html">Already have an account?</a>
             </div>
             <div class="signup-box">
-                <form>
+                <form action="" method="get" id="form">
                     <div class="name">
                         <label for="first">First Name:</label>
                         <input type="text" required placeholder="Jane">
@@ -24,11 +25,13 @@
                         <input type="text" required placeholder="Doe">
                     </div>
                     <label for="username">Username:</label>
-                    <input type="text" required placeholder="JaneDoe">
+                    <input type="text" required placeholder="JaneDoe" id="user">
+                    <div id="error2" class="error"></div>
                     <label for="email">E-mail Address:</label>
                     <input type="email" required placeholder="janedoe@mail.com">
                     <label for="password">Create a password:</label>
-                    <input type="password" required placeholder="">
+                    <input type="password" required placeholder="" id="password">
+                    <div id="error1" class="error"></div>
                     <input type="submit" value="Sign up" class="submit"/>
                 </form>
                 <p>By clicking the Sign Up button, you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
