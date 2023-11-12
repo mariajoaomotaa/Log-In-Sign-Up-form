@@ -6,10 +6,12 @@
         <meta name="author" content="Maria João Mota">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
         <script defer src="index.js"></script>
     </head>
     <body>
-        <img src="WholeWorld.1.png">
+        <img src="WholeWorld.1.png" id="logo">
         <div class="container">
             <div class="left">
                 <h1>Nice to Meet <span>You</span>!</h1>
@@ -35,6 +37,17 @@
                     <input type="submit" value="Sign up" class="submit"/>
                 </form>
                 <p>By clicking the Sign Up button, you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+        <div class="modal" id="myModal">
+            <div class="modal-box">
+                <i class="far fa-check-circle"></i>
+                <h2>Completed</h2>
+                <h3>Your account has been created!</h3>
+                <div class="buttons">
+                    <button class="close" id="okClose">Ok, close</button>
+                    <button id="loginButton">Log in</button>
+                </div>
             </div>
         </div>
         
